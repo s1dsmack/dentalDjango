@@ -1,0 +1,473 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Dr. Garfield Young, D.D.S.</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{% static 'website/img/core-img/favicon_test2.ico' %}">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preload-content">
+      <div id="dento-load"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <!-- Top Content -->
+          <div class="col-6 col-md-9 col-lg-8">
+            <div class="top-header-content">
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="1616 Packard Rd, Ann Arbor, MI 48104"><i class="fa fa-map-marker"></i> <span>1616 Packard Rd, Ann Arbor, MI 48104</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="info@garfieldyoungdds.com"><i class="fa fa-envelope"></i> <span>info@garfieldyoungdds.com</span></a>
+            </div>
+          </div>
+          <!-- Top Header Social Info -->
+          <div class="col-6 col-md-3 col-lg-4">
+            <div class="top-header-social-info text-right">
+              <a href="https://www.facebook.com/garfieldyoungdds" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.twitter.com/garfieldyoungdds" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.instagram.com/garfieldyoungdds" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/garfieldyoungdds" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+            <!-- Logo -->
+            <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/garfield_logo_new7.png' %}" alt=""></a>
+
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="classy-menu">
+
+              <!-- Close Button -->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+
+              <!-- Nav Start -->
+              <div class="classynav">
+                <ul id="nav">
+                  <li><a href="{% url 'home' %}">Home</a></li>
+                  <li><a href="#">Pages</a>
+                    <ul class="dropdown">
+                      <li><a href="{% url 'home' %}">- Home</a></li>
+                      <li><a href="{% url 'about' %}">- About Us</a></li>
+                      <li><a href="{% url 'service' %}">- Services</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'cleaning' %}">- Teeth Cleaning</a></li>
+                          <li><a href="{% url 'missing' %}">- Missing/Chip Teeth</a></li>
+                          <li><a href="{% url 'whitening' %}">- Whitening</a></li>
+                          <li><a href="{% url 'cosmetic' %}">- Cosmetic Dentistry</a></li>
+                          <li><a href="{% url 'tpain' %}">- Tooth Pain</a></li>
+                          <li><a href="{% url 'surgery' %}">- Oral Surgery</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="{% url 'home' %}#pricing">- Pricing</a></li>
+                      <li><a href="{% url 'home' %}#news">- News</a></li>
+                      <li><a href="{% url 'contact' %}">- Contact</a></li>
+                      <li><a href="#">- Patient Info</a>
+                        <ul class="dropdown">
+                          <li><a href="#">- Apply For Finance</a>
+                            <ul class="dropdown">
+                              <li><a href="{% url 'credit' %}">- CareCredit Finance</a></li>
+                              <li><a href="{% url 'lending' %}">- Lending Club</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="{% url 'insurance' %}">- Insurance</a></li>
+                          <li><a href="#">- Helpful Info</a>
+                            <ul class="dropdown">
+                              <li><a href="{% url 'policy' %}">- Office Policy</a></li>
+                              <li><a href="{% url 'faqs' %}">- FAQs</a></li>
+                              <li><a href="{% url 'privacy' %}">- Privacy Policy</a></li>
+                              <li><a href="{% url 'gallery' %}">- Smile Gallery</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'service' %}">Services</a></li>
+                  <li><a href="{% url 'home' %}#pricing">Pricing</a></li>
+                  <li><a href="{% url 'home' %}#news">News</a></li>
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+              </div>
+              <!-- Nav End -->
+            </div>
+
+            <!-- Booking Now Button -->
+            <a href="{% url 'home' %}#booking" class="btn dento-btn booking-btn">Booking Now</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Privacy Policy</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Privacy Policy</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Privacy Area - Part 1 of 3 Start ******* -->
+  <section class="dento-about-us-area mt-70">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- About Us Thumbnail -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-thumbnail mb-50">
+            <img src="{% static 'website/img/bg-img/privacy_backgroundpic_1d.jpg' %}" alt="">
+          </div>
+        </div>
+        <!-- About Content -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-content mb-50">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>Patient Privacy Policy</h2>
+              <div class="line"></div>
+            </div>
+            <h4><strong>Notice of Privacy Practices for Protected Health Information</strong></h4><br/>
+            <h6><strong>This notice describes how medical information about you may be used and disclosed and how you can get access to this information. Please review it carefully!</strong></h6>
+            <p>With your consent, the practice is permitted by federal privacy laws to make uses and disclosures of your health information for purposes of treatment, payment, and health care operations. Protected health information is the information we create and obtain in providing our services to you. Such information may include documenting your symptoms, examination and test results, diagnoses, treatment, and applying for future care or treatment. It also includes billing documents for those services.</p>
+            <h6><strong>Example of uses of your health information for treatment purposes:</strong></h6>
+            <p>A nurse obtains treatment information about you and records it in a health record. During the course of your treatment, the doctor determines a need to consult with another specialist in the area. The doctor will share the information with such specialist and obtain input.</p> 
+            <h6><strong>Example of use of your health information for payment purposes:</strong></h6>
+            <p>We submit a request for payment to your health insurance company. The health insurance company requests information from us regarding medical care given. We will provide information to them about you and the care given.</p>
+            <h6><strong>Example of Use of Your Information for Health Care Operations:</strong></h6>
+            <p>We obtain services from our insurers or other business associates such as quality assessment, quality improvement, outcome evaluation, protocol and clinical guidelines development, training programs, credentialing, medical review, legal services, and insurance. We will share information about you with such insurers or other business associates as necessary to obtain these services.</p>
+            <h6><strong>Your Health Information Rights</strong></h6>
+            <p>The health record we maintain and billing records are the physical property of the practice. The information in it, however, belongs to you. You have a right to:</p>
+            <ul class="fa-ul">
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Request a restriction on certain uses and disclosures of your health information by delivering the request in writing to our office. request but we will comply with any request granted.</li><br/>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Additionally, if you believe your privacy rights have been violated, you may file a written complaint at our office by delivering the written complaint to Garfield Young, DDS. You may also file a complaint by mailing it to the Director of Health and Human Services whose street address is <strong>333 S. Grand Ave, Lansing, MI. 48909</strong>.</li><br/>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> We cannot, and will not, require you to waive the right to file a complaint with the Secretary of Health and Human Services (HHS) as a condition of receiving treatment from the practice.</li><br/>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> We cannot, and will not, retaliate against you for filing a complaint with the Secretary.</li><br/>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Privacy Area - Part 1 of 3 Area End ****** -->
+
+  <div class="container">
+    <div class="dento-border clearfix"></div>
+  </div>
+
+  <!-- ****** Privacy Area - Part 2 of 3 Start ******* -->
+  <section class="dento-about-us-area mt-70">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- About Us Thumbnail -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-thumbnail mb-50">
+            <img src="{% static 'website/img/bg-img/privacy_backgroundpic_2c.jpg' %}" alt="">
+          </div>
+        </div>
+        <!-- About Content -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-content mb-50">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <!-- <h2>Patient Privacy Policy</h2> -->
+              <!--<div class="line"></div>-->
+            </div>
+            <h4><strong>Other Disclosures and Uses</strong></h4><br/>
+            <h6><strong>Notification</strong></h6>
+            <p>Unless you object, we may use or disclose your protected health information to notify, or assist in notifying, a family member, personal representative, or other person responsible for your care, about your location, and about your general condition, or your death.</p>
+            <h6><strong>Communication with Family</strong></h6>
+            <p>Using our best judgment, we may disclose to a family member, other relative, close personal friend, or any other person you identify, health information relevant to that person’s involvement in your care or in payment for such care if you do not object or in an emergency.</p> 
+            <h6><strong>Food and Drug Administration (FDA)</strong></h6>
+            <p>We may disclose to the FDA your protected health information relating to adverse events with respect to products and product defects, or post-marketing surveillance information to enable product recalls, repairs, or replacements.</p>
+            <h6><strong>Workers Compensation</strong></h6>
+            <p>If you are seeking compensation through Workers Compensation, we may disclose your protected health information to the extent necessary to comply with laws relating to Workers Compensation. <strong>734-668-1616</strong>.</p>
+            <h6><strong>Public Health</strong></h6>
+            <p>As required by law, we may disclose your protected health information to public health or legal authorities charged with preventing or controlling disease, injury, or disability.</p>
+            <h6><strong>Abuse & Neglect</strong></h6>
+            <p>We may disclose your protected health information to public authorities as allowed by law to report abuse or neglect.</p>
+            <h6><strong>Law Enforcement</strong></h6>
+            <p>We may disclose your protected health information for law enforcement purposes as required by law, such as when required by a court order, or in cases involving felony prosecutions, or to the extent an individual is in the custody of law enforcement.</p>
+            <ul class="fa-ul">
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Appeal a denial of access to your protected health information except in certain circumstances.</li><br/>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Request that your health care record be amended to correct incomplete or incorrect information by delivering a written request to our office.</li><br/>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> File a statement of disagreement if your amendment is denied, and require that the request for amendment and any denial be attached in all future disclosures of your protected health information.</li><br/>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Obtain an accounting of disclosures of your health information as required to be maintained by law by delivering a written request to our office. An accounting will not include internal uses of information for treatment, payment, or operations, disclosures made to you or made at your request, or disclosures made to family members or friends in the course of providing care.</li><br/>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Request that communication of your health information be made by alternative means or at an alternative location by delivering the request in writing to our office.</li><br/>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Revoke authorizations that you made previously to use or disclose information except to the extent information or action has already been taken by delivering a written revocation to our office.</li><br/>
+            </ul>
+            <p>If you want to exercise any of the above rights, please contact <strong>Garfield Young, D.D.S., 1616 Packard Rd, Ann Arbor, MI 48104, 734-668-1616</strong>, in person or in writing, during normal business hours. We will provide you with assistance on the steps to take to exercise your rights.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Privacy Area - Part 2 of 3 Area End ****** -->
+
+  <div class="container">
+    <div class="dento-border clearfix"></div>
+  </div>
+
+  <!-- ****** Privacy Area - Part 3 of 3 Start ******* -->
+  <section class="dento-about-us-area mt-70">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- About Us Thumbnail -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-thumbnail mb-50">
+            <img src="{% static 'website/img/bg-img/privacy_backgroundpic_3b.jpg' %}" alt="">
+          </div>
+        </div>
+        <!-- About Content -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-content mb-50">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <!-- <h2>Patient Privacy Policy</h2> -->
+              <!--<div class="line"></div>-->
+            </div>
+            <h4><strong>Our Responsibilities</strong></h4><br/>
+            <p>The practice is required to: Maintain the privacy of your health information as required by law; Provide you with a notice of our duties and privacy practices as to the information we collect and maintain about you; Abide by the terms of this Notice; Notify you if we cannot accommodate a requested restriction or request; and Accommodate your reasonable requests regarding methods to communicate health information with you.</p>
+            <p>We reserve the right to amend, change, or eliminate provisions in our privacy practices and access practices and to enact new provisions regarding the protected health information we maintain. If our information practices change, we will amend our Notice. You are entitled to receive a revised copy of the Notice by calling and requesting a copy of our “Notice” or by visiting our office and picking up a copy.</p>
+            <h6><strong>To Request Information or File a Complaint</strong></h6>
+            <p>If you have questions, would like additional information, or want to report a problem regarding the handling of your information, you may contact, <strong>Garfield Young, D.D.S., 1616 Packard Rd, Ann Arbor, MI 48104, 734-668-1616</strong>.</p>
+            <h6><strong>Health Oversight</strong></h6>
+            <p>Federal law allows us to release your protected health information to appropriate health oversight agencies or for health oversight activities.</p> 
+            <h6><strong>Judicial/Administrative Proceedings</strong></h6>
+            <p>We may disclose your protected health information in the course of any judicial or administrative proceeding as allowed or required by law, with your consent, or as directed by a proper court order.</p>
+            <h6><strong>Marketing</strong></h6>
+            <p>We may contact you to provide you with information about treatment alternatives, or with information about other health-related benefits and services that may be of interest to you. In addition, we may contact you for permission to disclose portions of your protected health information for use in the practice.</p>
+            <h6><strong>Other Uses</strong></h6>
+            <p>Other uses and disclosures besides those identified in this Notice will be made only as otherwise authorized by law or with your written authorization and you may revoke the authorization as previously provided.</p>
+            <p>Effective Date: January 25, 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Privacy Area - Part 3 of 3 Area End ****** -->
+
+  <div class="container">
+    <div class="dento-border clearfix"></div>
+  </div>
+
+  <!-- Cool Facts Area Start -->
+  <section class="dento-cta-area">
+    <div class="container">
+      <div class="row">
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <!-- <i class="icon_genius"></i> -->
+            <img src="{% static 'website/img/core-img/insurance_logo_1c.png' %}" alt="">
+            <!-- <h2><span class="counter">150</span>+</h2> -->
+            <!-- <h5>Years Of Combined Experience</h5> -->
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <!-- <i class="icon_heart_alt"></i> -->
+            <img src="{% static 'website/img/core-img/insurance_logo_2.png' %}" alt="">
+            <!-- <h2><span class="counter">12,000</span>+</h2> -->
+            <!-- <h5>Happy Patients</h5> -->
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <!-- <i class="icon_book_alt"></i> -->
+            <img src="{% static 'website/img/core-img/insurance_logo_3.png' %}" alt="">
+            <!-- <h2><span class="counter">18</span></h2> -->
+            <!-- <h5>Board Certifications & Licenses</h5> -->
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <!-- <i class="icon_id"></i> -->
+            <img src="{% static 'website/img/core-img/insurance_logo_4.png' %}" alt="">
+            <!-- <h2><span class="counter">6</span></h2> -->
+            <!-- <h5>Dentists</h5> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Cool Facts Area End -->
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/home_backgroundpic_4b.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-footer-widget">
+            <a href="{% url 'home' %}" class="d-block mb-4"><img src="{% static 'website/img/core-img/garfield_logo_new7.png' %}" alt=""></a>
+            <p>We are devoted to restoring and enhancing the natural beauty of your smile using conservative, state-of-the-art procedures that result in a beautiful, long lasting smile!</p>
+            <div class="footer-contact">
+              <p><i class="icon_pin"></i> 1616 Packard Rd, Ann Arbor, MI 48104 </p>
+              <p><i class="icon_phone"></i> 734-668-1616</p>
+              <p><i class="icon_mail"></i> info@garfieldyoungdds.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Opening Hours</h5>
+
+            <!-- Opening Hours -->
+            <ul class="opening-hours">
+              <li><span>Mon-Wed</span> <span>9:00AM-6:00PM</span></li>
+              <li><span>Thu-Fri</span> <span>9:30AM-4:30PM</span></li>
+              <li><span>Sat</span> <span>By Appt Only</span></li>
+              <li><span>Sun</span> <span>Closed</span></li>
+              <li><span>Holidays</span> <span>Closed</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Quick Links</h5>
+
+            <!-- Quick Links Nav -->
+            <nav>
+              <ul class="quick-links">
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'faqs' %}">FAQs</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                <li><a href="{% url 'policy' %}">Policy</a></li>
+                <li><a href="{% url 'home' %}#news">News</a></li>
+                <li><a href="{% url 'insurance' %}">Insurance</a></li>
+                <li><a href="{% url 'gallery' %}">Smile Gallery</a></li>
+                <li><a href="{% url 'home' %}#ourpractice">Our Practice</a></li>
+                <li><a href="{% url 'home' %}#service">Services</a></li>
+                <li><a href="{% url 'privacy' %}">Privacy</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Garfield's Digest</h5>
+
+            <p>We will send out weekly news articles and some great offers!</p>
+            <!-- Newsletter Form -->
+            <div class="footer-newsletter-form">
+              <!-- <form action="#" method="post"> # removed for now, but will work on later
+                {% csrf_token %} -->
+                <input type="email" name="nl-email" value="" placeholder="Email Address">
+                <!-- <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+              </form> -->
+                <a href="{% url 'home' %}"><button><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            </div>
+
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="https://www.facebook.com/garfieldyoungdds" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.twitter.com/garfieldyoungdds" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.instagram.com/garfieldyoungdds" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/garfieldyoungdds" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copywrite Area -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="copywrite-content">
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website was built by Front-End Vision & Designs, LLC</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>

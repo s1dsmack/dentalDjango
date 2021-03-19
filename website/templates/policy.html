@@ -1,0 +1,381 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Dr. Garfield Young, D.D.S.</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{% static 'website/img/core-img/favicon_test2.ico' %}">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preload-content">
+      <div id="dento-load"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <!-- Top Content -->
+          <div class="col-6 col-md-9 col-lg-8">
+            <div class="top-header-content">
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="1616 Packard Rd, Ann Arbor, MI 48104"><i class="fa fa-map-marker"></i> <span>1616 Packard Rd, Ann Arbor, MI 48104</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="info@garfieldyoungdds.com"><i class="fa fa-envelope"></i> <span>info@garfieldyoungdds.com</span></a>
+            </div>
+          </div>
+          <!-- Top Header Social Info -->
+          <div class="col-6 col-md-3 col-lg-4">
+            <div class="top-header-social-info text-right">
+              <a href="https://www.facebook.com/garfieldyoungdds" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.twitter.com/garfieldyoungdds" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.instagram.com/garfieldyoungdds" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/garfieldyoungdds" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+            <!-- Logo -->
+            <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/garfield_logo_new7.png' %}" alt=""></a>
+
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="classy-menu">
+
+              <!-- Close Button -->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+
+              <!-- Nav Start -->
+              <div class="classynav">
+                <ul id="nav">
+                  <li><a href="{% url 'home' %}">Home</a></li>
+                  <li><a href="#">Pages</a>
+                    <ul class="dropdown">
+                      <li><a href="{% url 'home' %}">- Home</a></li>
+                      <li><a href="{% url 'about' %}">- About Us</a></li>
+                      <li><a href="{% url 'service' %}">- Services</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'cleaning' %}">- Teeth Cleaning</a></li>
+                          <li><a href="{% url 'missing' %}">- Missing/Chip Teeth</a></li>
+                          <li><a href="{% url 'whitening' %}">- Whitening</a></li>
+                          <li><a href="{% url 'cosmetic' %}">- Cosmetic Dentistry</a></li>
+                          <li><a href="{% url 'tpain' %}">- Tooth Pain</a></li>
+                          <li><a href="{% url 'surgery' %}">- Oral Surgery</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="{% url 'home' %}#pricing">- Pricing</a></li>
+                      <li><a href="{% url 'home' %}#news">- News</a></li>
+                      <li><a href="{% url 'contact' %}">- Contact</a></li>
+                      <li><a href="#">- Patient Info</a>
+                        <ul class="dropdown">
+                          <li><a href="#">- Apply For Finance</a>
+                            <ul class="dropdown">
+                              <li><a href="{% url 'credit' %}">- CareCredit Finance</a></li>
+                              <li><a href="{% url 'lending' %}">- Lending Club</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="{% url 'insurance' %}">- Insurance</a></li>
+                          <li><a href="#">- Helpful Info</a>
+                            <ul class="dropdown">
+                              <li><a href="{% url 'policy' %}">- Office Policy</a></li>
+                              <li><a href="{% url 'faqs' %}">- FAQs</a></li>
+                              <li><a href="{% url 'privacy' %}">- Privacy Policy</a></li>
+                              <li><a href="{% url 'gallery' %}">- Smile Gallery</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'service' %}">Services</a></li>
+                  <li><a href="{% url 'home' %}#pricing">Pricing</a></li>
+                  <li><a href="{% url 'home' %}#news">News</a></li>
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+              </div>
+              <!-- Nav End -->
+            </div>
+
+            <!-- Booking Now Button -->
+            <a href="{% url 'home' %}#booking" class="btn dento-btn booking-btn">Booking Now</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Our Office Policy</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Office Policy</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** About Us Area Start ******* -->
+  <section class="dento-about-us-area mt-70">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- About Us Thumbnail -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-thumbnail mb-50">
+            <img src="{% static 'website/img/bg-img/policy_backgroundpic_1a.jpg' %}" alt="">
+          </div>
+        </div>
+        <!-- About Content -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-content mb-50">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>Our Office Policy<br/>Garfield Young, D.D.S.</h2>
+              <div class="line"></div>
+            </div>
+            <h6><strong>All Accounts Are Due And Payable At Time Of Service</strong></h6>
+            <p>If a procedure requires multiple appointments, payment is required in full at the first appointment. The patient is fully responsible for all fees charged by our office regardless of insurance coverage.</p>
+            <h6><strong>Our Payment Options</strong></h6>
+            <p>We accept the following forms of payment:</p> 
+            <ul class="fa-ul">
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Cash</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Check* (only for established patients)</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Debit Card</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Credit Card (MasterCard, Visa, Amex, and Discover)</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> CareCredit Flexible Finance</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Lending Club Flexible Finance</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Paypal</li>
+              <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Venmo</li>
+            </ul>
+            <p><i>*Checks are not accepted for new patients and emergency patients.</i></p>
+            <h6><strong>Patients With Insurance</strong></h6>
+            <p>As a courtesy to you, our office will submit claims to your insurance provider. If for any reason the claims go unpaid, you will be responsible for all charges. The patient is responsible for the estimated non-covered portion, procedures and/or deductibles at the time of service.</p>
+            <p><strong>All Children must be accompanied by their Parents to receive treatment.</strong></p>
+            <p><strong>Parents accompanying their children</strong> are financially responsible for payment and must make prior arrangements for payment (cash or credit card authorization).</p>
+            <h6><strong>Cancellation Policy</strong></h6>
+            <p>Please note that once you have an appointment, we make every effort to reserve that time especially for you. Should you for any reason, find that you must cancel or reschedule your appointment, we ask that you give us at least 48 hours notice in order to avoid a late cancellation fee.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** About Us Area End ****** -->
+
+  <div class="container">
+    <div class="dento-border clearfix"></div>
+  </div>
+
+  <!-- Cool Facts Area Start -->
+  <section class="dento-cta-area">
+    <div class="container">
+      <div class="row">
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <!-- <i class="icon_genius"></i> -->
+            <img src="{% static 'website/img/core-img/insurance_logo_1c.png' %}" alt="">
+            <!-- <h2><span class="counter">150</span>+</h2> -->
+            <!-- <h5>Years Of Combined Experience</h5> -->
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <!-- <i class="icon_heart_alt"></i> -->
+            <img src="{% static 'website/img/core-img/insurance_logo_2.png' %}" alt="">
+            <!-- <h2><span class="counter">12,000</span>+</h2> -->
+            <!-- <h5>Happy Patients</h5> -->
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <!-- <i class="icon_book_alt"></i> -->
+            <img src="{% static 'website/img/core-img/insurance_logo_3.png' %}" alt="">
+            <!-- <h2><span class="counter">18</span></h2> -->
+            <!-- <h5>Board Certifications & Licenses</h5> -->
+          </div>
+        </div>
+
+        <!-- Cool Facts Area -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-cta text-center mt-50 mb-100">
+            <!-- <i class="icon_id"></i> -->
+            <img src="{% static 'website/img/core-img/insurance_logo_4.png' %}" alt="">
+            <!-- <h2><span class="counter">6</span></h2> -->
+            <!-- <h5>Dentists</h5> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Cool Facts Area End -->
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/home_backgroundpic_4b.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-footer-widget">
+            <a href="{% url 'home' %}" class="d-block mb-4"><img src="{% static 'website/img/core-img/garfield_logo_new7.png' %}" alt=""></a>
+            <p>We are devoted to restoring and enhancing the natural beauty of your smile using conservative, state-of-the-art procedures that result in a beautiful, long lasting smile!</p>
+            <div class="footer-contact">
+              <p><i class="icon_pin"></i> 1616 Packard Rd, Ann Arbor, MI 48104 </p>
+              <p><i class="icon_phone"></i> 734-668-1616</p>
+              <p><i class="icon_mail"></i> info@garfieldyoungdds.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Opening Hours</h5>
+
+            <!-- Opening Hours -->
+            <ul class="opening-hours">
+              <li><span>Mon-Wed</span> <span>9:00AM-6:00PM</span></li>
+              <li><span>Thu-Fri</span> <span>9:30AM-4:30PM</span></li>
+              <li><span>Sat</span> <span>By Appt Only</span></li>
+              <li><span>Sun</span> <span>Closed</span></li>
+              <li><span>Holidays</span> <span>Closed</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Quick Links</h5>
+
+            <!-- Quick Links Nav -->
+            <nav>
+              <ul class="quick-links">
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'faqs' %}">FAQs</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                <li><a href="{% url 'policy' %}">Policy</a></li>
+                <li><a href="{% url 'home' %}#news">News</a></li>
+                <li><a href="{% url 'insurance' %}">Insurance</a></li>
+                <li><a href="{% url 'gallery' %}">Smile Gallery</a></li>
+                <li><a href="{% url 'home' %}#ourpractice">Our Practice</a></li>
+                <li><a href="{% url 'home' %}#service">Services</a></li>
+                <li><a href="{% url 'privacy' %}">Privacy</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Garfield's Digest</h5>
+
+            <p>We will send out weekly news articles and some great offers!</p>
+            <!-- Newsletter Form -->
+            <div class="footer-newsletter-form">
+              <!-- <form action="#" method="post"> # removed for now, but will work on later
+                {% csrf_token %} -->
+                <input type="email" name="nl-email" value="" placeholder="Email Address">
+                <!-- <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+              </form> -->
+                <a href="{% url 'home' %}"><button><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            </div>
+
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="https://www.facebook.com/garfieldyoungdds" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.twitter.com/garfieldyoungdds" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.instagram.com/garfieldyoungdds" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/garfieldyoungdds" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copywrite Area -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="copywrite-content">
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website was built by Front-End Vision & Designs, LLC</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>

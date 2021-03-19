@@ -1,0 +1,354 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Dr. Garfield Young, D.D.S.</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{% static 'website/img/core-img/favicon_test2.ico' %}">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preload-content">
+      <div id="dento-load"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <!-- Top Content -->
+          <div class="col-6 col-md-9 col-lg-8">
+            <div class="top-header-content">
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="1616 Packard Rd, Ann Arbor, MI 48104"><i class="fa fa-map-marker"></i> <span>1616 Packard Rd, Ann Arbor, MI 48104</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="info@garfieldyoungdds.com"><i class="fa fa-envelope"></i> <span>info@garfieldyoungdds.com</span></a>
+            </div>
+          </div>
+          <!-- Top Header Social Info -->
+          <div class="col-6 col-md-3 col-lg-4">
+            <div class="top-header-social-info text-right">
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+            <!-- Logo -->
+            <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/garfield_logo_new7.png' %}" alt=""></a>
+
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="classy-menu">
+
+              <!-- Close Button -->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+
+              <!-- Nav Start -->
+              <div class="classynav">
+                <ul id="nav">
+                  <li><a href="{% url 'home' %}">Home</a></li>
+                  <li><a href="#">Pages</a>
+                    <ul class="dropdown">
+                      <li><a href="{% url 'home' %}">- Home</a></li>
+                      <li><a href="{% url 'about' %}">- About</a></li>
+                      <li><a href="{% url 'home' %}#service">- Services</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'cleaning' %}">- Teeth Cleaning</a></li>
+                          <li><a href="{% url 'missing' %}">- Missing/Chip Teeth</a></li>
+                          <li><a href="{% url 'whitening' %}">- Whitening</a></li>
+                          <li><a href="{% url 'cosmetic' %}">- Cosmetic Dentistry</a></li>
+                          <li><a href="{% url 'tpain' %}">- Tooth Pain</a></li>
+                          <li><a href="{% url 'surgery' %}">- Oral Surgery</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="{% url 'home' %}#pricing">- Pricing</a></li>
+                      <li><a href="{% url 'home' %}#news">- News</a></li>
+                      <li><a href="{% url 'contact' %}">- Contact</a></li>
+                      <li><a href="#">- Patient Info</a>
+                        <ul class="dropdown">
+                          <li><a href="#">- Apply For Finance</a>
+                            <ul class="dropdown">
+                              <li><a href="{% url 'credit' %}">- CareCredit Finance</a></li>
+                              <li><a href="{% url 'lending' %}">- Lending Club</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="{% url 'insurance' %}">- Insurance</a></li>
+                          <li><a href="#">- Helpful Info</a>
+                            <ul class="dropdown">
+                              <li><a href="{% url 'policy' %}">- Office Policy</a></li>
+                              <li><a href="{% url 'faqs' %}">- FAQs</a></li>
+                              <li><a href="{% url 'privacy' %}">- Privacy Policy</a></li>
+                              <li><a href="{% url 'gallery' %}">- Smile Gallery</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'service' %}">Services</a></li>
+                  <li><a href="{% url 'home' %}#pricing">Pricing</a></li>
+                  <li><a href="{% url 'home' %}#news">News</a></li>
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+              </div>
+              <!-- Nav End -->
+            </div>
+
+            <!-- Booking Now Button -->
+            <a href="{% url 'home' %}#booking" class="btn dento-btn booking-btn">Booking Now</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Contact Us</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  {% if message_name %}
+    <center><h3>Thanks for contacting us {{ message_name }}!</h3>
+      <br/>
+    We have received your message and will contact you as soon as possible.</center>
+      <br/>
+  {% endif %}
+
+  <!-- ***** Contact Area Start ***** -->
+  <section class="dento-contact-area mt-50 mb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="google-maps mb-100">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23622.220031488036!2d-83.74889946279393!3d42.261923779193644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883cafb2b259dd3d%3A0x3b4e947a9757c2a5!2s1616%20Packard%20St%2C%20Ann%20Arbor%2C%20MI%2048104!5e0!3m2!1sen!2sus!4v1615327607121!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Contact Information -->
+        <div class="col-12 col-md-4">
+          <div class="contact-information">
+            <h5>Address</h5>
+            <p>1616 Packard Rd, Ann Arbor, MI 48104</p>
+
+            <h5>Phone</h5>
+            <p>734-668-1616</p>
+
+            <h5>Fax</h5>
+            <p>734-668-1818</p>
+
+            <h5>Email</h5>
+            <p class="mb-0">info@garfieldyoungdds.com</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <a name="here"></a>
+        <div class="col-12 col-md-8">
+          <div class="contact-form">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>Send Us A Message</h2>
+              <div class="line"></div>
+            </div>
+            <!-- Form -->
+            <form action="{% url 'contact' %}" method="post">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" name="message-name" class="form-control mb-30" placeholder="Full Name">
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" name="message-email" class="form-control mb-30" placeholder="Email Address">
+                </div>
+                <div class="col-12">
+                  <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn dento-btn">Send Message</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Contact Area End ***** -->
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/home_backgroundpic_4b.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-footer-widget">
+            <a href="{% url 'home' %}" class="d-block mb-4"><img src="{% static 'website/./img/core-img/garfield_logo_new7.png' %}" alt=""></a>
+            <p>We are devoted to restoring and enhancing the natural beauty of your smile using conservative, state-of-the-art procedures that result in a beautiful, long lasting smile!</p>
+            <div class="footer-contact">
+              <p><i class="icon_pin"></i> 1616 Packard Rd, Ann Arbor, 48104 USA</p>
+              <p><i class="icon_phone"></i>734-668-1616</p>
+              <p><i class="icon_mail"></i>info@garfieldyoungdds.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Opening Hours</h5>
+
+            <!-- Opening Hours -->
+            <ul class="opening-hours">
+              <li><span>Mon-Wed</span> <span>9:00AM-6:00PM</span></li>
+              <li><span>Thu-Fri</span> <span>9:30AM-4:30PM</span></li>
+              <li><span>Sat</span> <span>By Appt Only</span></li>
+              <li><span>Sun</span> <span>Closed</span></li>
+              <li><span>Holidays</span> <span>Closed</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Quick Links</h5>
+
+            <!-- Quick Links Nav -->
+            <nav>
+              <ul class="quick-links">
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'faqs' %}">FAQs</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'policy' %}">Policy</a></li>
+                <li><a href="{% url 'home' %}#news">News</a></li>
+                <li><a href="{% url 'home' %}#ourpractice">Our Practice</a></li>
+                <li><a href="{% url 'gallery' %}">Smile Gallery</a></li>
+                <li><a href="{% url 'insurance' %}">Insurance</a></li>
+                <li><a href="{% url 'home' %}#service">Services</a></li>
+                <li><a href="{% url 'privacy' %}">Privacy</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Garfield's Digest</h5>
+
+            <p>We will send out our weekly newsletter and some great offers!</p>
+            <!-- Newsletter Form -->
+            <div class="footer-newsletter-form">
+              <!-- <form action="#" method="post"> # removed for now, but will work on later
+                {% csrf_token %} -->
+                <input type="email" name="nl-email" value="" placeholder="Email Address">
+                <!-- <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+              </form> -->
+                <a href="{% url 'home' %}"><button><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            </div>
+
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="https://www.facebook.com/garfieldyoungdds" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.twitter.com/garfieldyoungdds" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.instagram.com/garfieldyoungdds" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/garfieldyoungdds" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copywrite Area -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="copywrite-content">
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website was built by Front-End Vision & Designs, LLC</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>
