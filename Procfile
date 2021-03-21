@@ -1,1 +1,1 @@
-web: gunicorn dental.wsgi:application --log-file=-
+web: gunicorn dental.wsgi:application --preload --workers 1s
